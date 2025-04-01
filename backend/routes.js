@@ -29,4 +29,16 @@ router.get("/users", async(req,res)=>{
     const users = await User.find()
     res.json(users)
 })
+
+router.put("/users/:id",async(req,res)=>{
+    const {id} = req.params
+    const {username} = req.body;
+    const updated = await User.findByIdAndUpdate(id, { username }, { new: true });
+    if (!updated) {
+        return res.status(404).json({ message: "User not found" });
+    }
+    res.json({message: "User updated successfully"});
+    
+})
+
 module.exports = router;
