@@ -25,4 +25,8 @@ router.post("/signup", async (req, res) => {
         res.status(201).json({ message: "User created successfully!" });
     });
 
+router.get("/users", async(req,res)=>{
+    const users = await User.find()
+    res.json(users)
+})
 module.exports = router;
