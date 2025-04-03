@@ -1,6 +1,3 @@
-# Kay's Krafts - Capstone Project
-
-## Project Title
 
 ## Kay's Krafts: A Personalized Art & Crafts E-commerce Platform
 
