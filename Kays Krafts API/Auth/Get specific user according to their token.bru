@@ -1,0 +1,15 @@
+meta {
+  name: Get specific user according to their token
+  type: http
+  seq: 3
+}
+
+get {
+  url: http://localhost:3000/api/users
+  body: none
+  auth: none
+}
+
+headers {
+  Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MjViNzU2ZmI2YWJiNjA3OWJlYzVlMSIsImlhdCI6MTc0NzMzNDcxOCwiZXhwIjoxNzQ3MzM1MzE4fQ.qmAOtFzm8_LpwIekW0_9GZhUaQqFvTbojQBOHyzRRwk
+}

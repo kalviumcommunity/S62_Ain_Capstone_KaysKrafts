@@ -1,0 +1,31 @@
+meta {
+  name: Create an order
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://localhost:3000/api/orders
+  body: json
+  auth: none
+}
+
+headers {
+  Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MjViNzU2ZmI2YWJiNjA3OWJlYzVlMSIsImlhdCI6MTc0NzMzNTUxMiwiZXhwIjoxNzQ3OTQwMzEyfQ._GBGdmq6APRTAshV-PsPeeiClOAN3AygTFpXVYezbtI
+}
+
+body:json {
+  {
+    "products": [
+      {
+        "product": "68246328fb3f5bb2ad3bd58b",
+        "quantity": 2
+      },
+      {
+        "product": "68247d6f0b83fb0ddd02ee4c",
+        "quantity": 1
+      }
+    ]
+  }
+  
+}
